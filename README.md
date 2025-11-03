@@ -45,14 +45,13 @@ This enhancement pipeline fixes that issue by:
 
 ```mermaid
 flowchart TD
-    A[Input Video (LipSync)] --> B[Extract Mouth ROI]
-    B --> C[Resolution Comparison]
-    C -->|Low Quality ROI| D[Apply Super-Resolution (GFPGAN / CodeFormer)]
-    C -->|Good Quality ROI| E[Keep Original Region]
-    D --> F[Merge ROI into Full Frame]
+    A["Input Video (LipSync)"] --> B["Extract Mouth ROI"]
+    B --> C["Resolution Comparison"]
+    C -->|Low Quality ROI| D["Apply Super-Resolution (GFPGAN / CodeFormer)"]
+    C -->|Good Quality ROI| E["Keep Original Region"]
+    D --> F["Merge ROI into Full Frame"]
     E --> F
-    F --> G[Save Enhanced Output.mp4]
-
+    F --> G["Save Enhanced Output.mp4"]
 
 🧠 Model Overview
 🟩 GFPGAN (Face Restoration)
