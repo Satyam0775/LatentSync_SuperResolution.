@@ -45,23 +45,15 @@ This enhancement pipeline fixes that issue by:
 
 <img width="207" height="302" alt="image" src="https://github.com/user-attachments/assets/7197d32d-db5d-48df-9955-e46a31b4adf1" />
 
-
-
 🧠 Model Overview
 🟩 GFPGAN (Face Restoration)
-
 Used for face super-resolution and detail recovery.
-
 Model: GFPGANv1.4.pth
-
 Path: GFPGAN/experiments/pretrained_models/
 
 🟦 CodeFormer (Fidelity Restoration)
-
 Used for balanced detail and fidelity reconstruction.
-
 Model: codeformer.pth
-
 Path: CodeFormer/weights/
 
 🧰 Directory Structure
