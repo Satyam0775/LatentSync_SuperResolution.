@@ -43,15 +43,8 @@ This enhancement pipeline fixes that issue by:
 
 ## 🧩 Enhancement Flow
 
-```mermaid
-flowchart TD
-    A["Input Video (LipSync)"] --> B["Extract Mouth ROI"]
-    B --> C["Resolution Comparison"]
-    C -->|Low Quality ROI| D["Apply Super-Resolution (GFPGAN / CodeFormer)"]
-    C -->|Good Quality ROI| E["Keep Original Region"]
-    D --> F["Merge ROI into Full Frame"]
-    E --> F
-    F --> G["Save Enhanced Output.mp4"]
+<img width="207" height="302" alt="image" src="https://github.com/user-attachments/assets/7197d32d-db5d-48df-9955-e46a31b4adf1" />
+
 
 
 🧠 Model Overview
